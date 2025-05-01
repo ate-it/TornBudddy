@@ -59,3 +59,7 @@ end
 # Linting
 gem "rubocop", require: false
 gem "rubocop-rails", require: false
+
+gem "ruby-debug-ide", "~> 0.7.5"
+
+gem "debase", "~> 0.2.9"
