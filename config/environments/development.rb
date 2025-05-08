@@ -16,7 +16,7 @@ Rails.application.configure do
 
   # Enable server timing.
   config.server_timing = true
-  config.action_mailer.preview_path = "#{Rails.root.join("spec/mailers/previews")}"
+  config.action_mailer.preview_paths = [ "#{Rails.root.join("spec/mailers/previews")}" ]
   config.time_zone = "UTC"
   config.active_record.default_timezone = :utc
   config.i18n.default_locale = :en
