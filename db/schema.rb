@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_05_07_144954) do
+ActiveRecord::Schema[7.2].define(version: 2025_05_08_124434) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -35,5 +35,21 @@ ActiveRecord::Schema[7.2].define(version: 2025_05_07_144954) do
     t.string "profile_image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "life_current"
+    t.integer "life_maximum"
+    t.integer "life_increment"
+    t.integer "life_interval"
+    t.integer "life_ticktime"
+    t.datetime "life_fulltime"
+    t.string "status_description"
+    t.string "status_details"
+    t.string "status_state"
+    t.string "status_color"
+    t.datetime "status_until"
+    t.datetime "states_hosptital"
+    t.datetime "states_jail"
+    t.string "last_action_status"
+    t.datetime "last_action_timestamp"
+    t.string "last_action_relative"
   end
 end
